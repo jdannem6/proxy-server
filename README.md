@@ -7,12 +7,19 @@ This project emulates a simple proxy server which can serve up to 100 client req
 The proxy server parses client requests to determine the file and server they are requesting. If the requested file is in the proxy's cache, it is sent directly to the client. Otherwise, the proxy retrieves the requested file from the origin server, caches it, adn forwards the file to the client. This program effectively demonstrates the utility of a proxy server in limiting the network usage of a set of hosts in a LAN.
 
 ### Prerequisites
-This project was tested and run with Python3.9.12 and an Ubuntu 20.04.04 LTS operating system.
+This project was tested and run with Python3.9.12, an Ubuntu 20.04.04 LTS operating system, and Google Chrome as the web browser
 
 ## Installation
 1. Clone the repository
 
 ![](/Documentation_Images/repo_cloning.png)
+
+## Configure the Proxy Server
+1. Set up the proxy server by going into your proxy server settings and setting the values as shown below. Note that for Windows OS, you can visit this link for guidance on configuring your proxy.
+
+http://www.digitalcitizen.life/how-set-proxy-server-all-major-internet-browsers-windows
+
+![](/Documentation_Images/proxy_settings.png)
 ## Program Interpretation and Execution
 1. Run the proxy_server.py file:
 
