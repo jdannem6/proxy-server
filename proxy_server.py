@@ -109,7 +109,7 @@ if __name__ == "__main__":
 
     # Listen for up to 100 http requests from clients
     proxy_server.listen(REQUIRED_REQUESTS)
-    print("Server started http://%s:%s" % (PROXY, PROXY_PORT))
+    print("Server started http://%s:%s/%s" % (PROXY, PROXY_PORT, "proxy_usage?"))
 
     connected = True # True while the proxy is connected to the user
     while (connected):
